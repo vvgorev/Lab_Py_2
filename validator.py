@@ -10,7 +10,7 @@ def ensure_is_dir(path):
 
 def ensure_is_file(path):
     if not path.is_file():
-        raise IsADirectoryError(f"объект {path} файлом")
+        raise IsADirectoryError(f"объект {path} не является файлом")
     
 def validate_cp_args(src, dst, recursive=False):
     """Проверяет аргументы для команды cp."""

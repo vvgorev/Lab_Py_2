@@ -2,8 +2,6 @@ import os
 import tempfile
 import shutil
 from pathlib import Path
-
-# Импорты из твоих модулей
 from commands.ls import ls
 from commands.cd import cd
 from commands.cat import cat
@@ -24,7 +22,7 @@ def test_ls():
     ls([])
 
 def test_cat():
-    # Создаём временный файл
+    
     with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.txt') as f:
         f.write("Тестовый файл\n")
         fname = f.name
